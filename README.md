@@ -13,13 +13,16 @@ A simple iOS Swift Framework for an app pre-rating before you transfer the user 
 
 ### Open the rating window
 
+#### Swift
 ```swift
 AppRating.sharedInstance.test()
 ```
 
+#### Objective-C
 ```objective-c
 [[AppRating sharedInstance] test];
 ```
+
 
 ## Licence
     Copyright (C) 2016 Andrej Albrecht
