@@ -1,6 +1,14 @@
 # AppRating-iOS
 A simple iOS Swift Framework for an app pre-rating before you transfer the user to the AppStore.
 
+## Usage - Adding this Framework to your iOS project
+
+1. Create a /lib directory at the project root that will contain this framework.
+2. Put the framework artefacts into a Debug/ and Release/ folder inside the lib/ folder
+3. Add the parameter "$(PROJECT_DIR)/lib/$(CONFIGURATION)" into your "Runpath Search Paths" and "Framework Search Paths" of your project target
+4. Add this framework from the Release folder to the "Embedded Binaries" of your general section of your project target
+5. Make sure that this framework will appear in the "Linked Frameworks and Libraries" and "Embedded Binaries" section
+
 
 ## Licence
     Copyright (C) 2016 Andrej Albrecht
