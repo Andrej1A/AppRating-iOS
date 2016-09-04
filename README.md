@@ -1,6 +1,11 @@
 # AppRating-iOS
 A simple iOS Swift Framework for an app pre-rating before you transfer the user to the AppStore.
 
+(UNFINISHED)
+
+# Requirements
+- >= iOS 8.0
+
 ## Usage
 
 ### Adding this Framework to your iOS project
