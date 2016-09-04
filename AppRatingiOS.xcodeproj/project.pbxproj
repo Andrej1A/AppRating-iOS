@@ -10,6 +10,7 @@
 		77EF762B1D7C4029001851D8 /* AppRatingiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EF762A1D7C4029001851D8 /* AppRatingiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77EF76321D7C4029001851D8 /* AppRatingiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EF76271D7C4029001851D8 /* AppRatingiOS.framework */; };
 		77EF76371D7C4029001851D8 /* AppRatingiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF76361D7C4029001851D8 /* AppRatingiOSTests.swift */; };
+		77EF76421D7C4106001851D8 /* AppRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF76411D7C4106001851D8 /* AppRating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		77EF76311D7C4029001851D8 /* AppRatingiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppRatingiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EF76361D7C4029001851D8 /* AppRatingiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRatingiOSTests.swift; sourceTree = "<group>"; };
 		77EF76381D7C4029001851D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77EF76411D7C4106001851D8 /* AppRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				77EF762A1D7C4029001851D8 /* AppRatingiOS.h */,
 				77EF762C1D7C4029001851D8 /* Info.plist */,
+				77EF76411D7C4106001851D8 /* AppRating.swift */,
 			);
 			path = AppRatingiOS;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77EF76421D7C4106001851D8 /* AppRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,28 +314,33 @@
 		77EF763C1D7C4029001851D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AppRatingiOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.albrecht-andrej.AppRatingiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		77EF763D1D7C4029001851D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AppRatingiOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.albrecht-andrej.AppRatingiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
