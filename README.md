@@ -1,5 +1,5 @@
 # AppRating-iOS
-A simple iOS Swift Framework for an app pre-rating before you transfer the user to the AppStore.
+A simple iOS Swift framework for an app pre-rating before you transfer the user to the AppStore.
 
 (UNFINISHED)
 
@@ -8,7 +8,7 @@ A simple iOS Swift Framework for an app pre-rating before you transfer the user 
 
 ## Usage
 
-### Adding this Framework to your iOS project
+### Adding this framework to your iOS project
 
 1. Create a /lib directory at the project root that will contain this framework.
 2. Put the framework artefacts into a Debug/ and Release/ folder inside the lib/ folder
